@@ -1,0 +1,15 @@
+# src/code_converter/config/tasks.yaml
+conversion_task:
+  description: >
+    Convert the following source code from {source_language} into {target_language}.
+    Ensure the converted code follows {target_language} coding standards,
+    maintains equivalent logic, and is production-ready.
+    Source code:
+    ```
+    {code_snippet}
+    ```
+  expected_output: >
+    A complete {target_language} code snippet that compiles/runs correctly and
+    follows best practices. Do not add extra explanations unless requested.
+  agent: code_converter_agent
+  # output_file: converted_code.{file_extension}
