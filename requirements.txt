@@ -1,0 +1,4 @@
+crewai
+dotenv
+pydantic
+fastapi
