@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "main.py": {
-      "runtime": "@vercel/python",
+     "runtime": "@vercel/python@3.11",
       "excludeFiles": "{__pycache__,tests,knowledge,*.md,*.pyc,*.pyo,*.egg-info}/**"
     }
   },
