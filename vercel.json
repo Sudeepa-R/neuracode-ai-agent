@@ -2,11 +2,9 @@
   "version": 2,
   "functions": {
     "api/main.py": {
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.11"
-      },
+      "runtime": "python3.11",
+      "maxDuration": 60,
+      "memory": 1024,
       "excludeFiles": "**/{__pycache__,tests,knowledge,*.egg-info}/** *.md *.pyc *.pyo"
     }
   },
