@@ -1,20 +1,15 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "main.py",
-      "use": "@vercel/python"
+  "functions": {
+    "main.py": {
+      "runtime": "python3.11",
+      "excludeFiles": "{__pycache__,tests,knowledge,*.md,*.pyc,*.pyo,*.egg-info}/**"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
       "dest": "main.py"
     }
-  ],
-  "functions": {
-    "main.py": {
-      "excludeFiles": "{__pycache__,tests,knowledge,*.md,*.pyc,*.pyo,*.egg-info}/**"
-    }
-  }
+  ]
 }
