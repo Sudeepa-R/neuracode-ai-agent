@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "main.py": {
+    "api/main.py": {
       "runtime": "@vercel/python@3.11.0",
       "excludeFiles": "{__pycache__,tests,knowledge,*.md,*.pyc,*.pyo,*.egg-info}/**"
     }
@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "main.py"
+      "dest": "api/main.py"
     }
   ]
 }
