@@ -2,15 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "main.py",
+        "src": "src/neuracode_ai_agent/main.py",
         "use": "@vercel/python",
-        "config" : {"maxLambdaSize":"15mb","runtime":"python3.12"}
+        "config" : {"maxLambdaSize":"50mb","runtime":"python3.12"}
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "main.py"
+        "dest": "src/neuracode_ai_agent/main.py"
       }
     ]
   }
