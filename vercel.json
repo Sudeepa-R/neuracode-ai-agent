@@ -1,8 +1,15 @@
 {
-  "functions": {
-    "*.py": {
-      "includeFiles": "path/to/essential/files/**"
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
     }
-  },
-  "excludeFiles": ["tests/**", ".git/**", "*.md", "*.txt", "docs/**"]
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+    }
+  ]
 }
