@@ -1,5 +1,2 @@
 crewai
-python-dotenv
-pydantic
-fastapi
-uvicorn
+
