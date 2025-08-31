@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "api/main.py": {
-      "excludeFiles": "{__pycache__,tests,knowledge,*.md,*.pyc,*.pyo,*.egg-info}/**"
+      "excludeFiles": "**/{.git,.venv,__pycache__,tests,knowledge,.mypy_cache,.pytest_cache,*.egg-info}/** *.md *.pyc *.pyo"
     }
   },
   "routes": [
